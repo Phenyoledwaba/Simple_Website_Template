@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Website Skeleton</title>
+        <!-- Bootstrap CSS (for responsive design, components)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--<!-- Custom CSS (your own styles that over or complement Bootstrap) -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Static Website Designs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+        
+        <!-- First (Hero) Section -->
+        <section class="hero-section bg-dark text-white text-center py-5">
+            <div class="container">
+                <!-- JavaScript will dynamically insert the welcome message here -->
+                <h1 id="welcome" class="display-4"></h1>
+                <p class="lead">Professional design solutions for my brand</p> 
+                <button id="myBtn" class="btn btn-primary btn-lg mt-3">Get Started</button>
+            </div>
+        </section>
+        
+        <!-- Second (Services) Section -->
+        <section id="services" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row g-4">
+                    <!-- Service Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Designs</h5>
+                                <p class="card-text">Beautiful and Responsive websites tailored to my brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Branding</h5>
+                                <p class="card-text">Logos, Brand Identity, and Marketing materials for your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Marketing</h5>
+                                <p class="card-text">Social Media Campaigns, SEO, and Digital marketing strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Third (Portfolio) Section -->
+        <section id="portfolio" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Portfolio</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <img src="assets/images/portfolio1.jpg" class="img-fluid rounded shadow-sm" alt="Portfolio 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/portfolio2.jpg" class="img-fluid rounded shadow-sm" alt="Portfolio 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/portfolio3.jpg" class="img-fluid rounded shadow-sm" alt="Portfolio 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== Fourth (Contact) Section ===== -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form class="mx-auto" style="max-width:600px;">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-light text-center py-4 mt-5">
+            &copy; 2025 My Static Website Designs
+        </footer>
+        
+        <!-- Custom JavaScript -->
+        <script src="js/script.js"></script>
+            
+        <!-- Bootstrap JS Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+<!-- script tag tells the browser: “Hey, load this JS file.”
+
+src="js/script.js" points to the file path (folder js → file script.js)
+
+Placing it at the bottom of <body> ensures that the HTML elements are loaded first, so JS can interact with them. 
+
+container → centers the content and provides padding
+
+mt-5 → margin-top spacing
+
+text-center → center aligns all text inside the container
+
+btn btn-link → Bootstrap-styled link
+
+btn btn-primary → Bootstrap primary button style
+
+mt-3 → adds spacing above the button -->
+
+<!-- Navbar: Responsive and sticky at top.
+
+Hero Section: Uses your JS ID (#welcome) for dynamic welcome message.
+
+Services: Bootstrap cards replace your old commented cards.
+
+Portfolio: Grid of images, fully responsive.
+
+Contact Form: Bootstrap form for future user input.
+
+Footer: Simple, clean. -->

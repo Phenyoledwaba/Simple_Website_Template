@@ -1,0 +1,51 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', Ariel, sans-serif;
+    background-color: #f4f4f9; /* White */
+    color: #333; /* Black */
+    padding: 20px;
+}
+
+/* First (Hero) Section Styling */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Paragraphs */
+p {
+    color: #555; /* Grey */
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #007bff; /* Light Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Light Blue */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3 /* Dark Blue */
+}
